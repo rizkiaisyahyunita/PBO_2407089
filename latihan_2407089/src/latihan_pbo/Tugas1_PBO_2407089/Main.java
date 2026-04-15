@@ -1,5 +1,5 @@
 package latihan_pbo.Tugas1_PBO_2407089;
-    
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,14 +1,20 @@
 public class BangunRuang extends BangunDatar {
-    private int tinggi;
+    private double tinggi;
 
     // constructor
-    public BangunRuang(int panjang, int lebar, int tinggi) {
+    public BangunRuang(double panjang, double lebar, double tinggi) {
         super(panjang, lebar);
         this.tinggi = tinggi;
     }
 
+    // overriding
+    @Override
+    public double hitungLuas() {
+        return getPanjang() * getLebar();
+    }
+
     // method hitung volume
-    public int hitungVolume() {
+    public double hitungVolume() {
         return hitungLuas() * tinggi;
     }
 }
